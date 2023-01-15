@@ -1,0 +1,27 @@
+{
+  "name": "automation-framework-using-jest-and-puppeteer",
+  "version": "1.0.0",
+  "description": "Раздел 5: Automation Framework using Jest and Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzmitry-duboyski/Automation-Framework-using-Jest-and-Puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzmitry-duboyski/Automation-Framework-using-Jest-and-Puppeteer/issues"
+  },
+  "homepage": "https://github.com/dzmitry-duboyski/Automation-Framework-using-Jest-and-Puppeteer#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1",
+    "jest-puppeteer": "^6.2.0",
+    "puppeteer": "^19.5.2"
+  }
+}
