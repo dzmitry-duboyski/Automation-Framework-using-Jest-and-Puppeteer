@@ -8,7 +8,7 @@
 
 - Lesson 48: Configuration setup
 
-  `$ ./node_modules/.bit/jest --init`
+  `$ ./node_modules/.bin/jest --init`
 
 <!--
 Lesson 49: Babel config source code

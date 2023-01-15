@@ -4,7 +4,7 @@
   "description": "Раздел 5: Automation Framework using Jest and Puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --forceExit"
   },
   "repository": {
     "type": "git",
