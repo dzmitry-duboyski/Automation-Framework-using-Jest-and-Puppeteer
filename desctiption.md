@@ -14,9 +14,13 @@
 
   Add files: `babel.config.js`, `jest.config.js`, `jest-puppeteer.config.js`
 
+- Lesson 50: Create Base Page
+
+  Create files:
+    - ./example.test.js
+    - ./pages/BasePage.js
 <!--
 Lesson 49: Babel config source code
-Lesson 50: Create Base Page
 Lesson 51: Framework part 1
 Lesson 52: Framework part 2
 Lesson 53: Framework part 3
