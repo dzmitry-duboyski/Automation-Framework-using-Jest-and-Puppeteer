@@ -8,7 +8,11 @@
 
 - Lesson 48: Configuration setup
 
+  Configure jest.
+
   `$ ./node_modules/.bin/jest --init`
+
+  Add files: `babel.config.js`, `jest.config.js`, `jest-puppeteer.config.js`
 
 <!--
 Lesson 49: Babel config source code
