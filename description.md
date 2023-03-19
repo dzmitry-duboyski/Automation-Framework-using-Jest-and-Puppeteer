@@ -46,6 +46,14 @@
   Create files:
   - `LoginPage.js`
 
+- Lesson 54: Framework part 4
+
+  Changes:
+  - add `it("Feedback should work"` in `example.test.js`
+  
+  Create files:
+  - `FeedbackPage.js`
+  
 <!--
 Lesson 49: Babel config source code
 Lesson 51: Framework part 1

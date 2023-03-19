@@ -8,15 +8,19 @@
 import HomePage from "../pages/HomePage"
 import TopBar from "../pages/components/TopBar"
 import LoginPage from "../pages/LoginPage"
+import FeedbackPage from "../pages/FeedBackPage"
 
 describe("example", () => {
   let homepage
   let topbar
-  let loginPage = new LoginPage()
+  const loginPage = new LoginPage()
+  const feedbackPage = new FeedbackPage()
+  const defaultTimeout = 15000
+
 
   beforeAll(async () => {
     jest.setTimeout(() => {
-    }, 15000);
+    }, defaultTimeout);
 
     homepage = new HomePage()
     topbar = new TopBar()
@@ -37,6 +41,18 @@ describe("example", () => {
     await loginPage.isLoginFormDisplayed()
     await loginPage.login('username', 'password')
     await loginPage.wait(5000)
-  }, 15000)
+  }, defaultTimeout)
+
+  it("Feedback should work", async () => {
+    await feedbackPage.visit()
+    await feedbackPage.isFeedbackFormDisplayed()
+    await feedbackPage.submitFeedback(
+      "Jon",
+      "jon.dilly@mail.com",
+      "subject",
+      "Lorem ipsum"
+    )
+    await feedbackPage.wait(5000)
+  }, defaultTimeout)
 
 })
