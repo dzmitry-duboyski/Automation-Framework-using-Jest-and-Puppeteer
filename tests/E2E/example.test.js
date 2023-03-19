@@ -12,7 +12,7 @@ import FeedbackPage from "../../pages/FeedBackPage"
 
 describe("End-To-End Test", () => {
   const homePage = new HomePage()
-  const topbar = new TopBar()
+  const topBar = new TopBar()
   const loginPage = new LoginPage()
   const feedbackPage = new FeedbackPage()
   const defaultTimeout = 15000
@@ -32,4 +32,15 @@ describe("End-To-End Test", () => {
       "Lorem ipsum"
     )
   }, defaultTimeout)
+
+  it("Should login to application", async () => {
+    await homePage.visit()
+    await topBar.isTopBarDisplayed()
+    await topBar.clickSignInButton()
+    await loginPage.isLoginFormDisplayed()
+    await loginPage.login("username","password")
+
+  }, defaultTimeout)
+
+  
 })
