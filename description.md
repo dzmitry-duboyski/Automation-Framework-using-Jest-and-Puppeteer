@@ -53,7 +53,10 @@
   
   Create files:
   - `FeedbackPage.js`
-  
+
+- Lesson 55: End-to-End Tests: part 1
+  add E2E test (`E2E/example.test.js`)
+
 <!--
 Lesson 49: Babel config source code
 Lesson 51: Framework part 1

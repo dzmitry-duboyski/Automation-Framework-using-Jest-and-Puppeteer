@@ -15,7 +15,6 @@ export default class FeedbackPage extends BasePage {
     await page.waitForSelector("#submit-feedback")
   }
 
-
   /**
    * Sending a feedback form. The form will be filled with the received data and submitted.
    * @param {string} name `name` - username.
