@@ -9,13 +9,13 @@ import HomePage from "../../pages/HomePage"
 import TopBar from "../../pages/components/TopBar"
 import LoginPage from "../../pages/LoginPage"
 import FeedbackPage from "../../pages/FeedBackPage"
+import {defaultTimeout, userLogin, userPass} from "../../pages/constants/constants"
 
 describe("End-To-End Test", () => {
   const homePage = new HomePage()
   const topBar = new TopBar()
   const loginPage = new LoginPage()
   const feedbackPage = new FeedbackPage()
-  const defaultTimeout = 15000
 
   it("Should load homepage", async () => {
     await homePage.visit()
@@ -38,9 +38,7 @@ describe("End-To-End Test", () => {
     await topBar.isTopBarDisplayed()
     await topBar.clickSignInButton()
     await loginPage.isLoginFormDisplayed()
-    await loginPage.login("username","password")
+    await loginPage.login(userLogin,userPass)
 
-  }, defaultTimeout)
-
-  
+  }, 20000)
 })
