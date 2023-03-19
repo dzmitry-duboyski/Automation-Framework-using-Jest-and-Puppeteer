@@ -19,6 +19,14 @@
   Create files:
     - ./example.test.js
     - ./pages/BasePage.js
+
+- Lesson 51: Framework part 1
+
+  Create files:
+    - ./tests/example.test.js
+    - ./pages/HomePage.js
+
+
 <!--
 Lesson 49: Babel config source code
 Lesson 51: Framework part 1
@@ -30,3 +38,6 @@ Lesson 56: End-to-End Tests: part 2
 Lesson 57: Framework Improvement tips
 Lesson 58: Source Code 
 -->
+
+<!-- http://zero.webappsecurity.com/ -->
+<!-- https://clone-zero-bank.netlify.app/index.html -->
