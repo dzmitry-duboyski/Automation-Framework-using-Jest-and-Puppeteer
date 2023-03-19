@@ -1,7 +1,5 @@
 import BasePage from "./BasePage"
-import constants from "./constants/constants"
-const baseURL = constants.baseURL
-
+import {baseURL} from "./constants/constants"
 
 export default class HomePage extends BasePage{
   async visit() {
@@ -17,17 +15,14 @@ export default class HomePage extends BasePage{
   }
   
   async clickHomepageLink(){
-    // await page.waitForSelector('#homeMenu')
     await page.click('#homeMenu')
   }
 
   async clickOnlineBankingMenuLink(){
-    // await page.waitForSelector('#onlineBankingMenu')
     await page.click('#onlineBankingMenu')
   }
 
   async clickFeedbackLink(){
-    // await page.waitForSelector('#feedback')
     await page.click('#feedback')
   }
 }

@@ -1,6 +1,5 @@
 import BasePage from "./BasePage";
-import constants from './constants/constants.js'
-const baseURL = constants.baseURL
+import { baseURL } from './constants/constants.js'
 
 export default class LoginPage extends BasePage {
 
@@ -18,8 +17,8 @@ export default class LoginPage extends BasePage {
   /**
    * User authorization on the site.
    * 
-   * @param {string} login User `login` to login to the site.
-   * @param {string} password User `password` to enter the site.
+   * @param {string} login User to login to the site.
+   * @param {string} password Password
    * 
    * @example
    * ```js
@@ -28,8 +27,8 @@ export default class LoginPage extends BasePage {
    */
   async login(login, password) {
     await page.waitForSelector("#login_form")
-    await page.type("#user_login", login, { delay: 100 })
-    await page.type("#user_password", password, { delay: 100 } )
+    await page.type("#user_login", login)
+    await page.type("#user_password", password)
     await page.click("#form-actions-submit")
   }
 }

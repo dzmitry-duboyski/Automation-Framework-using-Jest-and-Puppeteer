@@ -1,22 +1,14 @@
-
-// continue 51 lesson
-// start create clone for http://zero.webappsecurity.com/index.html
-
-// old http://zero.webappsecurity.com/index.html
-// new https://clone-zero-bank.netlify.app/index.html
-
 import HomePage from "../pages/HomePage"
 import TopBar from "../pages/components/TopBar"
 import LoginPage from "../pages/LoginPage"
 import FeedbackPage from "../pages/FeedBackPage"
+import {userLogin, userPass, defaultTimeout} from "../pages/constants/constants"
 
 describe("example", () => {
   let homepage
   let topbar
   const loginPage = new LoginPage()
   const feedbackPage = new FeedbackPage()
-  const defaultTimeout = 15000
-
 
   beforeAll(async () => {
     jest.setTimeout(() => {
@@ -28,7 +20,6 @@ describe("example", () => {
 
   it("Homepage should work", async () => {
     await homepage.visit()
-    // await page.waitForTimeout(5000)
   })
 
   it("Navbar should be displayed", async () => {
@@ -39,7 +30,7 @@ describe("example", () => {
   it("Try to login", async () => {
     await loginPage.visit()
     await loginPage.isLoginFormDisplayed()
-    await loginPage.login('username', 'password')
+    await loginPage.login(userLogin, userPass)
     await loginPage.wait(5000)
   }, defaultTimeout)
 
@@ -54,5 +45,4 @@ describe("example", () => {
     )
     await feedbackPage.wait(5000)
   }, defaultTimeout)
-
 })

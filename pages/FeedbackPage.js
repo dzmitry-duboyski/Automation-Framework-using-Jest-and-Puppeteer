@@ -1,6 +1,5 @@
 import BasePage from "./BasePage";
-import constants from "./constants/constants";
-const baseURL = constants.baseURL
+import {baseURL} from "./constants/constants";
 
 export default class FeedbackPage extends BasePage {
   async visit() {
@@ -17,10 +16,20 @@ export default class FeedbackPage extends BasePage {
 
   /**
    * Sending a feedback form. The form will be filled with the received data and submitted.
-   * @param {string} name `name` - username.
-   * @param {string} email `email` - user's email.
-   * @param {string} subject `subject` - email subject.
-   * @param {string} comment `comment` - user comment.
+   * @param {string} name username.
+   * @param {string} email user's email.
+   * @param {string} subject email subject.
+   * @param {string} comment user comment.
+   * 
+   * @example
+   * ```js
+   * await feedbackPage.submitFeedback(
+   *  "Jon",
+   *  "jon.dilly@mail.com",
+   *  "subject",
+   *  "Lorem ipsum"
+   * )
+   * ```
    */
   async submitFeedback(name, email, subject, comment) {
     await page.type("#name",name )

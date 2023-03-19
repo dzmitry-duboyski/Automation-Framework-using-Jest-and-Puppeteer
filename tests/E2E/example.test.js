@@ -1,10 +1,3 @@
-
-// continue 51 lesson
-// start create clone for http://zero.webappsecurity.com/index.html
-
-// old http://zero.webappsecurity.com/index.html
-// new https://clone-zero-bank.netlify.app/index.html
-
 import HomePage from "../../pages/HomePage"
 import TopBar from "../../pages/components/TopBar"
 import LoginPage from "../../pages/LoginPage"
@@ -39,6 +32,5 @@ describe("End-To-End Test", () => {
     await topBar.clickSignInButton()
     await loginPage.isLoginFormDisplayed()
     await loginPage.login(userLogin,userPass)
-
-  }, 20000)
+  }, defaultTimeout)
 })

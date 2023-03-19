@@ -1,7 +1,10 @@
-export default {
-  baseURL: "https://clone-zero-bank.netlify.app/",
-}
+const baseURL = "https://clone-zero-bank.netlify.app/"
+const defaultTimeout = 15000
 
+const userLogin = "username"
+const userPass = "password"
+
+export { baseURL, defaultTimeout, userLogin, userPass }
 
 
 // Authorization does not work on this page "http://zero.webappsecurity.com/login.html"
