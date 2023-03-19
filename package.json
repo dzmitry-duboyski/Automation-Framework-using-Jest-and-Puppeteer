@@ -4,7 +4,8 @@
   "description": "Test Framework using Jest and Puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "test-watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
