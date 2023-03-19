@@ -1,7 +1,7 @@
 {
   "name": "automation-framework-using-jest-and-puppeteer",
   "version": "1.0.0",
-  "description": "Раздел 5: Automation Framework using Jest and Puppeteer",
+  "description": "Test Framework using Jest and Puppeteer",
   "main": "index.js",
   "scripts": {
     "test": "jest --forceExit"
