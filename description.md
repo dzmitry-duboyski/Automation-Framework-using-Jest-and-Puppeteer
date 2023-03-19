@@ -26,6 +26,15 @@
     - ./tests/example.test.js
     - ./pages/HomePage.js
 
+-Lesson 52: Framework part 2
+
+  Changes:
+  - add methods `clickHomepageLink()`, `clickOnlineBankingMenuLink()`, `clickFeedbackLink()` in file `./pages/HomePage.js` 
+  - update `HomePage.js`
+
+  Create files:
+    - `./pages/components/TopBar.js`
+
 
 <!--
 Lesson 49: Babel config source code

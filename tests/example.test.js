@@ -6,15 +6,18 @@
 // new https://clone-zero-bank.netlify.app/index.html
 
 import HomePage from "../pages/HomePage"
+import TopBar from "../pages/components/TopBar"
 
 describe('example', () => {
   let homepage
+  let topbar
 
   beforeAll(async () => {
     jest.setTimeout(() => {
-      
     }, 15000);
+
     homepage = new HomePage()
+    topbar = new TopBar()
   })
 
   it('Homepage shoult work', async () => {
@@ -24,6 +27,7 @@ describe('example', () => {
 
   it('Navbar shoult be displayed', async () => {
     await homepage.isNavbarDisplayed()
+    await topbar.isTopBarDisplayed()
   })
 
 })
