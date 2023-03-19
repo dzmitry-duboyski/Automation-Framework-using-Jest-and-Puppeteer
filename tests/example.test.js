@@ -7,10 +7,12 @@
 
 import HomePage from "../pages/HomePage"
 import TopBar from "../pages/components/TopBar"
+import LoginPage from "../pages/LoginPage"
 
 describe("example", () => {
   let homepage
   let topbar
+  let loginPage = new LoginPage()
 
   beforeAll(async () => {
     jest.setTimeout(() => {
@@ -29,5 +31,12 @@ describe("example", () => {
     await homepage.isNavbarDisplayed()
     await topbar.isTopBarDisplayed()
   })
+
+  it("Try to login", async () => {
+    await loginPage.visit()
+    await loginPage.isLoginFormDisplayed()
+    await loginPage.login('username', 'password')
+    await loginPage.wait(5000)
+  }, 15000)
 
 })

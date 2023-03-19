@@ -1,9 +1,11 @@
 import BasePage from "./BasePage"
+import constants from "./constants/constants"
+const baseURL = constants.baseURL
 
 
 export default class HomePage extends BasePage{
   async visit() {
-    await page.goto('http://zero.webappsecurity.com/')
+    await page.goto(baseURL)
     await page.waitForSelector('#nav')
   }
   

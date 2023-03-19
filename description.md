@@ -26,7 +26,7 @@
     - ./tests/example.test.js
     - ./pages/HomePage.js
 
--Lesson 52: Framework part 2
+- Lesson 52: Framework part 2
 
   Changes:
   - add methods `clickHomepageLink()`, `clickOnlineBankingMenuLink()`, `clickFeedbackLink()` in file `./pages/HomePage.js` 
@@ -35,6 +35,16 @@
   Create files:
     - `./pages/components/TopBar.js`
 
+
+- Lesson 53: Framework part 3
+
+  Changes:
+  - update `file example.test.js`:
+    - add `it("Try to login"`
+  - refactor - add `constants.js` file, change url
+
+  Create files:
+  - `LoginPage.js`
 
 <!--
 Lesson 49: Babel config source code
