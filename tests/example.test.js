@@ -8,7 +8,7 @@
 import HomePage from "../pages/HomePage"
 import TopBar from "../pages/components/TopBar"
 
-describe('example', () => {
+describe("example", () => {
   let homepage
   let topbar
 
@@ -20,12 +20,12 @@ describe('example', () => {
     topbar = new TopBar()
   })
 
-  it('Homepage shoult work', async () => {
+  it("Homepage should work", async () => {
     await homepage.visit()
     // await page.waitForTimeout(5000)
   })
 
-  it('Navbar shoult be displayed', async () => {
+  it("Navbar should be displayed", async () => {
     await homepage.isNavbarDisplayed()
     await topbar.isTopBarDisplayed()
   })
